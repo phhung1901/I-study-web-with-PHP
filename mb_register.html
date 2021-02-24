@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mb_register</title>
+    </head>
+    <body>
+        <div id="title">
+            <h2>Form đăng kí khóa học</h2>
+        </div>
+        <div id="body">
+            <form action="">
+                <label for="name"> Full name (*):
+                    <br>
+                    <input required style="width: 200px;" name="name" id="name" type="text" placeholder="Enter your full name..." value="">
+                </label>
+                <br><br>
+                <label for="phone">Phone number (*):
+                    <br>
+                    <input required style="width: 200px;" name="phone" type="number" id="number" value="" placeholder="Enter your phone number...">
+                </label>
+                <br><br>
+                <label for="address">Addres (*): 
+                    <br>
+                    <input required style="width: 200px;" name="address" type="text" id="address" placeholder="Enter your address...">
+                </label>
+                <br><br>
+                <label for="email">Email (*):
+                    <br>
+                    <input required style="width: 200px;" name="email" type="email" id="email" placeholder="Enter your email...">
+                </label>
+                <br><br>
+                <label for="gender">Gender:
+                    <br>
+                    <input type="radio" name="gender" value="1"> Male
+                    <input type="radio" name="gender" value="2"> Female
+                    <input type="radio" name="gender" value="0"> Other
+                </label>
+                <br><br>
+                <label for="subjects">Subjects (*):
+                    <br>
+                    <select style="width: 200px;" name="subjects" id="subjects">
+                        <option value="">Lập trình PHP</option>
+                        <option value="">Thiết kế đồ họa</option>
+                        <option value="">Xử lí video</option>
+                    </select>
+                </label>
+                <br><br>
+                <label for="note">Note: 
+                    <br>
+                    <textarea name="note" id="note" cols="25" rows="10" placeholder="what do you think..."></textarea>
+                </label>
+                <br><br>
+                <button type="submit" name="submit">Đăng kí</button>
+                <button type="reset" name="reset">Reset</button>
+            </form>
+        </div>
+    </body>
+</html>
